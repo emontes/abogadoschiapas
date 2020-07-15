@@ -19,6 +19,7 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sitemap`,
+    `gatsby-plugin-offline`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -50,6 +51,18 @@ module.exports = {
             family: `Open Sans`,
           },
         ],
+      },
+    },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Servicios Integrales Monar`,
+        short_name: `Monar`,
+        start_url: `/`,
+        background_color: `#f7f0eb`,
+        theme_color: `#004867`,
+        display: `standalone`,
+        icon: `src/assets/apple-touch-icon.png`
       },
     },
   ],
