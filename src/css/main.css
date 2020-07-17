@@ -126,6 +126,10 @@ p {
   }
 }
 /*  global classes */
+.leaflet-container {
+  height: 400px;
+  width: 100%;
+}
 
 .btn {
   text-transform: uppercase;
